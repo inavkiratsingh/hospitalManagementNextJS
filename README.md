@@ -10,3 +10,6 @@ Added databases api key and bucked id and other collections ids in my environmen
 -> Created a "index.d.ts" file in "types" folder 
 -> define some interfaces for typescript
 -> Created a appwrite.types.ts file in types folder and define same attributes as interface
+
+
+
