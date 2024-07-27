@@ -24,7 +24,7 @@ export default async function newAppointment({ params: { userId }}: SearchParamP
           <AppointmentForm 
           type="create"
           userId={userId}
-          patientId={patient}
+          patientId={patient?.$id}
           />
 
             <p className="copyright mt-10 py-12">

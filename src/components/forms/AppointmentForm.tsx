@@ -67,9 +67,11 @@ const AppointmentForm = ({
     
 
     try {
+        console.log(patientId);
+        
         if(type=== 'create' && patientId) {
             const appointmentData = {
-                userId,
+                userid: userId,
                 patient: patientId,
                 primaryPhysician: values.primaryPhysician,
                 schedule: new Date(values.schedule),
@@ -84,7 +86,7 @@ const AppointmentForm = ({
 
             if(appointment){
                 form.reset();
-                router.push(`/patients/${userId}/new-appointment/success?appointmentId=${appointment.id}`)
+                router.push(`/patients/${userId}/new-appointment/success?appointmentId=${appointment.$id}`)
             }
         }
 
